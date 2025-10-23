@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #pic{
+        border:2px solid black;
+        width:500px;
+        height:400px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Canvas Tag</h1>
+    <canvas id="pic"></canvas>
+    <script>
+        var canvas=document.getElementById("pic");
+        var ctx=canvas.getContext("2d");
+            ctx.fillstyle="lightblue";
+            ctx.fillRect(20,40,140,100);
+
+    </script>
+</body>
+</html>
