@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1,
+        .container-2 {
+            background-color: #555;
+            padding: 10px;
+        }
+        .card{
+            background-color: orange;
+            padding: 10px;
+        }
+        /* general sibling ~  */
+        .container-1 .card ~ p {
+            background-color: red;
+            padding: 10px;
+        }
+        /* adjacent sibling +  */
+        .container-2 .card + p {
+            background-color:slateblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>General Sibling (~) and adjacent Sibling (+) </h1>
+    <section class="container-1">
+        <div class="card">
+            <h1>Card Title</h1>
+            <p>paragraph inside card</p>
+        </div>
+        <p>para -1</p>
+        <p>para -2</p>
+        <p>para -3</p>
+    </section>
+    <hr>
+    <section class="container-2">
+        <div class="card">
+            <h1>Card Title</h1>
+            <p>paragraph inside card</p>
+        </div>
+        <p>para -1</p>
+        <p>para -2</p>
+        <p>para -3</p>
+    </section>
+</body>
+</html>
