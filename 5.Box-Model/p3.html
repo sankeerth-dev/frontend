@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    section{
+        width: 400px;
+        border: 2px solid #222;
+    }
+    .b1,
+    .b2{
+        margin: 20px;
+        padding: 20px;
+        width: 350px;
+        color: #888;
+        border: 2px solid red;
+    }
+    .b1{box-sizing:border-box;}
+    /* borderbox prevents overflow */
+    .b2{box-sizing: content-box;}
+    /* content box keeps the box default */
+        </style>
+</head>
+<body>
+    <h1>box-sizing</h1>
+    <section>
+        <div class="b1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem, architecto veniam in delectus dolore doloremque commodi sapiente eveniet, sunt saepe eius sequi illum velit labore ullam, alias atque nulla?</p>
+        </div>
+        <hr>
+        <div class="b2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quam possimus, aut ad corporis quia non maiores! Placeat facilis pariatur eos incidunt? Voluptatum earum reiciendis minima soluta totam deleniti porro.</p>
+        </div>
+    </section>
+</body>
+</html>
